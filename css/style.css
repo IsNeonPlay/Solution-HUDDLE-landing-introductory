@@ -1,0 +1,111 @@
+/*************** GENERAL STYLES ***************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root {
+  --BG-Color: hsl(257, 40%, 49%);
+  --Font-Color: white;
+  --Hover-Color: hsl(300, 69%, 71%);
+  --Body-Font: 'Open Sans', sans-serif;
+  --Headings-Fonts: font-family: 'Poppins', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--Body-Font);
+  color: var(--Font-Color);
+  background-color: var(--BG-Color);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*************** HEADER ***************/
+.header {
+  margin: 0 auto;
+  width: 300px;
+  height: 95px;
+  display: flex;
+}
+.header__logo {
+  margin-right: 170px;
+  width: 135px;
+}
+
+/*************** MAIN ***************/
+.main {
+  margin: 30px auto;
+  width: 300px;
+  font-family: var(--Headings-Fonts);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/***** Main Img *****/
+.main__mockups {
+  width: 100%;
+}
+
+/***** Main Description *****/
+.main__desc {
+  text-align: center;
+  display: grid;
+  gap: 17px;
+}
+.main__desc-paragraph {
+  line-height: 25px;
+  opacity: .9;
+}
+.main__desc-button {
+  padding: 10px 76px;
+  color: var(--BG-Color);
+  text-decoration: none;
+  background-color: var(--Font-Color);
+  border-radius: 2em;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 20px;
+}
+
+/*************** FOOTER ***************/
+/***** Footer Social Media *****/
+.main__social-media {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.fa-brands {
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid var(--Font-Color);
+  border-radius: 50%;
+}
+.fa-facebook-f {
+  padding: 10px 12px;
+}
+
+/***** Footer Atribution *****/
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(308, 100%, 76%); 
+}
+
+/************ HOVER ************/
+.main__desc-button:hover {
+  color: var(--Font-Color);
+  background-color: var(--Hover-Color);
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.4);
+  transition: all .3s ease-in-out;
+}
+.fa-brands:hover {
+  color: var(--Hover-Color);
+  border: 1px solid var(--Hover-Color);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
